@@ -73,9 +73,9 @@ function Header() {
 
                 <FaTimes onClick={close} className={`${stylesMobile.close}`} />
                 <ul>
-                    <li onClick={close}><Link to='/'>Home</Link></li>
+                    <Link to='/' onClick={close}><li>Home</li></Link>
 
-                    <li onClick={subchavv}><Link>Chaveamento</Link>
+                    <Link> <li onClick={subchavv}>Chaveamento
 
                         <div className={`${stylesMobile.subglob} ${stylesDesktop.subglob}`}>
                             <Link to='chaveA' onClick={close} className={`${stylesMobile.subchav1} ${stylesDesktop.subchav1}`}>Categoria A</Link>
@@ -83,8 +83,8 @@ function Header() {
                         </div>
 
                     </li>
-
-                    <li onclick="org()"><a href="#">Painel</a></li>
+                    </Link>
+                    <Link to='org' onClick={close}> <li >Painel</li></Link>
 
                     <div className={stylesMobile.redes}>
                         <a href="https://www.instagram.com/tmprogressocabofrio/">

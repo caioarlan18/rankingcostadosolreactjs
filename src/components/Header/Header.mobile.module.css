@@ -57,7 +57,7 @@
   width: 100%;
 }
 .nv li {
-  margin-top: 40px;
+  margin-top: 30px;
   background-color: white;
   padding: 10px;
   position: relative;
@@ -73,7 +73,7 @@
 }
 .nv a {
   color: #ff6a49;
-  font-family: montserrat;
+  font-family: poppins;
   text-decoration: none;
   font-size: 17px;
   font-weight: 500;

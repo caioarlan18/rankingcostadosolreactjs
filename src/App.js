@@ -1,16 +1,17 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import ChavA from './components/KeyPages/ChavA';
-
+import GeneralPoints from './components/points/GeneralPoints';
 import Home from './components/Home';
 function App() {
   return (
     <div>
 
       <Router>
-        <Home />
+
         <Routes>
-          <Route path="/" exact element={''} />
+          <Route path="/" exact element={<Home />} />
+          <Route path='GeneralPoints' element={<GeneralPoints />} />
           <Route path='chaveA' element={<ChavA />} />
           <Route path='chaveB' element={''} />
         </Routes>

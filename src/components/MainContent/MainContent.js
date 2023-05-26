@@ -2,12 +2,14 @@ import stylesMobile from './MainContent.mobile.module.css'
 import stylesDesktop from './MainContent.desktop.module.css'
 import MainImage from '../../images/foto-main.jpg'
 import MainImage2 from '../../images/4262849.jpg'
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+
 function MainContent() {
     return (
         <div>
             <main className={`${stylesMobile.mn} ${stylesDesktop.mn}`}>
                 <div className={`${stylesMobile.mn1} ${stylesDesktop.mn1}`}>
-                    <img src={MainImage} alt="imagem principal do site" onClick="reg()" />
+                    <Link to='GeneralPoints'><img src={MainImage} alt="imagem principal do site" /></Link>
                 </div>
                 <div className={`${stylesMobile.mn2} ${stylesDesktop.mn2}`}>
                     <img src={MainImage2} alt="imagem principal do site" />
