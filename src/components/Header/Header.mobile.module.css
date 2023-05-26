@@ -1,0 +1,88 @@
+/* cabeçalho mobile */
+.hdd {
+  width: 100%;
+  background-color: white;
+  height: 120px;
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 12;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.hdd1 {
+  width: 33.33%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hdd1 h1 {
+  color: #3e4441;
+  text-align: center;
+  font-size: 17px;
+  font-family: poppins;
+  font-weight: 600;
+}
+.hdd1 img {
+  cursor: pointer;
+  margin-top: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+.hdd1 svg {
+  cursor: pointer;
+  color: #808080;
+  height: 20px;
+}
+/* cabeçalho desktop */
+.hdddesk {
+  display: none;
+}
+
+/* menu hambuguer mobile */
+.nv {
+  background-color: #ff6a49;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  transition: 0.3s;
+  overflow: hidden;
+  z-index: 30;
+}
+.nv ul {
+  overflow: hidden;
+  list-style: none;
+  height: 100%;
+  margin-top: 10px;
+  width: 100%;
+}
+.nv li {
+  margin-top: 40px;
+  background-color: white;
+  padding: 10px;
+  position: relative;
+  right: 40px;
+  width: 80%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.nv span {
+  color: white;
+  margin-top: 50px;
+  margin-left: 10px;
+}
+.nv a {
+  color: #ff6a49;
+  font-family: montserrat;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 500;
+  width: 95%;
+  margin-left: 15px;
+}
+
+.open {
+  width: 60%;
+  transition: 0.3s;
+  overflow: visible;
+}

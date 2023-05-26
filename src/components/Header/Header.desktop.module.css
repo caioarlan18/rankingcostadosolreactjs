@@ -1,0 +1,44 @@
+@media screen and (min-width: 992px) and (max-width: 4000px) {
+  /* cabeçalho mobile */
+  .hdd {
+    display: none;
+  }
+  /* cabeçalho desktop */
+  .hdddesk {
+    display: flex;
+    align-items: center;
+  }
+
+  .hd2 img {
+    cursor: pointer;
+    margin-top: 10px;
+    position: relative;
+    -webkit-transition: -webkit-transform 0.5s ease;
+    transition: transform 0.5s ease;
+  }
+  .hd2 img:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  .hd2 a {
+    color: #3367d5;
+    font-family: montserrat;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+    width: 95%;
+    transition: 0.3s;
+  }
+  .hd2 a:hover {
+    color: #334e8a;
+    transition: 0.3s;
+  }
+  .hd2 li {
+    list-style: none;
+  }
+  .submenu3,
+  .submenu4 {
+    display: none;
+    margin-top: 25px;
+  }
+}

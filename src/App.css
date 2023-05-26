@@ -1,4 +1,20 @@
 * {
   margin: 0 auto;
   padding: 0 auto;
+  scroll-behavior: smooth;
+}
+body {
+  overflow-x: hidden;
+}
+ul {
+  -webkit-tap-highlight-color: transparent;
+}
+section {
+  -webkit-tap-highlight-color: transparent;
+}
+div {
+  -webkit-tap-highlight-color: transparent;
+}
+nav {
+  -webkit-tap-highlight-color: transparent;
 }
