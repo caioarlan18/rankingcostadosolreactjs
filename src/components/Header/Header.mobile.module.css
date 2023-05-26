@@ -86,3 +86,49 @@
   transition: 0.3s;
   overflow: visible;
 }
+li a.subchav1,
+li a.subchav2 {
+  color: black;
+  font-size: 15px;
+  margin-top: 40px;
+  overflow: hidden;
+}
+.subglob {
+  height: 0;
+  overflow: hidden;
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+.subglobopen {
+  height: 120px;
+  overflow: visible;
+  transition: 0.3s;
+}
+.subchav1 {
+  position: relative;
+  bottom: 10px;
+  left: 15px;
+}
+.subchav2 {
+  position: relative;
+  bottom: 20px;
+  left: 15px;
+}
+
+.close {
+  color: white;
+  margin-top: 50px;
+  margin-left: 10px;
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+}
+.redes a svg {
+  margin-top: 40px;
+  position: relative;
+  right: 25px;
+  color: white;
+  width: 25px;
+  height: 30px;
+}

@@ -1,0 +1,20 @@
+.mn {
+  width: 100%;
+}
+.mn1 img {
+  display: flex;
+  width: 90%;
+  position: relative;
+  top: 145px;
+  cursor: pointer;
+}
+.mn1 h1 {
+  color: #ffffff;
+  font-family: poppins;
+  font-weight: 600;
+  font-size: 33px;
+}
+
+.mn2 {
+  display: none;
+}

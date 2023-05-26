@@ -1,10 +1,13 @@
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import { FaBars } from 'react-icons/fa';
 import { FaTimes } from 'react-icons/fa';
+import { FaFacebook } from 'react-icons/fa';
+import { FaInstagram } from 'react-icons/fa';
 import LogoSite from '../../images/logo do site.png'
 import stylesMobile from './Header.mobile.module.css'
 import stylesDesktop from './Header.desktop.module.css'
 import Arrow from '../../images/arrow-desktop.svg'
+
 function Header() {
     function reg() {
         var orient = document.querySelector('h1.orient')
@@ -19,8 +22,14 @@ function Header() {
         nv.classList.remove(stylesMobile.open)
 
     }
+    function subchavv(event) {
+        event.preventDefault()
+        var subglob = document.querySelector(`.${stylesMobile.subglob}`)
+        subglob.classList.toggle(stylesMobile.subglobopen)
+    }
     return (
         <div>
+
             {/* cabeçalho mobile */}
             <header className={`${stylesMobile.hdd} ${stylesDesktop.hdd}`}>
                 <div className={`${stylesMobile.hdd1} ${stylesDesktop.hdd1}`}>
@@ -36,59 +45,61 @@ function Header() {
 
             {/* cabeçalho desktop */}
             <header className={`${stylesMobile.hdddesk} ${stylesDesktop.hdddesk}`}>
-                <Router>
-                    <div className={`${stylesMobile.hd2} ${stylesDesktop.hd2}`}>
-                        <img src={LogoSite} alt="logo principal do site" width="250px" height="250px" />
-                    </div>
-                    <div className={`${stylesMobile.hd2} ${stylesDesktop.hd2}`}>
-                        <li>
-                            <a href="#" onclick="home()">Home</a><img src={Arrow} alt="" width="15px"
-                                height="15px" class="arrow" onclick="arrow()" />
-                        </li>
-                        <a href="https://www.instagram.com/tmprogressocabofrio/" className={`${stylesMobile.submenu3} ${stylesDesktop.submenu3}`}>Instagram</a>
-                        <a href="https://www.facebook.com/tmprogresso.cabofrio.5" className={`${stylesMobile.submenu4} ${stylesDesktop.submenu4}`}>Facebook</a>
-                    </div>
-                    <div className={`${stylesMobile.hd2} ${stylesDesktop.hd2}`}>
-                        <li><a href="#" onClick={reg}>Regulamentos</a></li>
-                    </div>
-                    <div className={`${stylesMobile.hd2} ${stylesDesktop.hd2}`}>
-                        <li><a href="#" onclick="chav()">Chaveamento</a></li>
-                    </div>
-                    <div className={`${stylesMobile.hd2} ${stylesDesktop.hd2}`}>
-                        <li><a href="#" onclick="org()">Entrar como organizador</a></li>
-                    </div>
-                </Router>
+
+                <div className={`${stylesMobile.hd2} ${stylesDesktop.hd2}`}>
+                    <img src={LogoSite} alt="logo principal do site" width="250px" height="250px" />
+                </div>
+                <div className={`${stylesMobile.hd2} ${stylesDesktop.hd2}`}>
+                    <li>
+                        <a href="#" onclick="home()">Home</a><img src={Arrow} alt="" width="15px"
+                            height="15px" class="arrow" onclick="arrow()" />
+                    </li>
+                    <a href="https://www.instagram.com/tmprogressocabofrio/" className={`${stylesMobile.submenu3} ${stylesDesktop.submenu3}`}>Instagram</a>
+                    <a href="https://www.facebook.com/tmprogresso.cabofrio.5" className={`${stylesMobile.submenu4} ${stylesDesktop.submenu4}`}>Facebook</a>
+                </div>
+                <div className={`${stylesMobile.hd2} ${stylesDesktop.hd2}`}>
+                    <li><a href="#" onClick={reg}>Regulamentos</a></li>
+                </div>
+                <div className={`${stylesMobile.hd2} ${stylesDesktop.hd2}`}>
+                    <li><a href="#" onclick="chav()">Chaveamento</a></li>
+                </div>
+                <div className={`${stylesMobile.hd2} ${stylesDesktop.hd2}`}>
+                    <li><a href="#" onclick="org()">Entrar como organizador</a></li>
+                </div>
+
             </header>
             {/* menu hamburguer mobile */}
             <nav className={`${stylesMobile.nv} ${stylesDesktop.nv}`}>
-                <FaTimes onClick={close} />
+
+                <FaTimes onClick={close} className={`${stylesMobile.close}`} />
                 <ul>
-                    <li onclick="home()"><a href="#">Home</a></li>
+                    <li onClick={close}><Link to='/'>Home</Link></li>
 
-                    <li onclick="subchavv()"><a href="#">Chaveamento</a>
+                    <li onClick={subchavv}><Link>Chaveamento</Link>
 
-                        <div class="subglob">
-                            <a href="#" onclick="chav()" class="subchav1">Categoria A</a>
-                            <a href="#" onclick="chavB()" class="subchav2">Categoria B</a>
+                        <div className={`${stylesMobile.subglob} ${stylesDesktop.subglob}`}>
+                            <Link to='chaveA' onClick={close} className={`${stylesMobile.subchav1} ${stylesDesktop.subchav1}`}>Categoria A</Link>
+                            <Link to='chaveB' onClick={close} className={`${stylesMobile.subchav2} ${stylesDesktop.subchav2}`}>Categoria B</Link>
                         </div>
 
                     </li>
 
                     <li onclick="org()"><a href="#">Painel</a></li>
 
-                    <div class="redes">
+                    <div className={stylesMobile.redes}>
                         <a href="https://www.instagram.com/tmprogressocabofrio/">
-                            <img src="./img/instagram_internet_media_network_social_icon_123258.svg" alt="icone instagram" width="25px" />
+                            <FaInstagram />
                         </a>
 
                         <a href="https://www.facebook.com/tmprogresso.cabofrio.5">
-                            <img src="./img/FB_icon-icons.com_65484.svg" alt="icone do facebook" width="25px" />
+                            <FaFacebook />
                         </a>
                     </div>
                 </ul>
 
             </nav>
-        </div>
+
+        </div >
     )
 }
 export default Header
