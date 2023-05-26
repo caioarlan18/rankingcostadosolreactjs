@@ -18,3 +18,50 @@
 .mn2 {
   display: none;
 }
+
+.homecontent {
+  position: relative;
+  top: 150px;
+}
+
+.homecontent1 h1 {
+  color: #3e4441;
+  font-family: poppins;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 30px;
+  width: 80%;
+}
+.homecontent1 p {
+  color: #3e4441;
+  font-family: poppins;
+  font-size: 13px;
+  font-weight: 500;
+  margin-top: 20px;
+  width: 80%;
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: justify;
+  border-radius: 5px;
+}
+
+.homecontent2 h1 {
+  color: #3e4441;
+  font-family: poppins;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 30px;
+  width: 80%;
+}
+.homecontent2 p {
+  color: #3e4441;
+  font-family: poppins;
+  font-size: 13px;
+  font-weight: 500;
+  margin-top: 20px;
+  width: 80%;
+  margin-bottom: 230px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 5px;
+}

@@ -10,7 +10,7 @@ function App() {
       <Router>
         <Home />
         <Routes>
-          <Route path="/" exact element={<Home />} />
+          <Route path="/" exact element={''} />
           <Route path='chaveA' element={<ChavA />} />
           <Route path='chaveB' element={''} />
         </Routes>
