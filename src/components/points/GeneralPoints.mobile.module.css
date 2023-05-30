@@ -51,17 +51,6 @@
   font-size: 14px;
 }
 
-.tabel_2,
-.tabel_3,
-.tabel_4,
-.tabel_5,
-.tabel_6,
-.tabela-7 {
-  display: none;
-}
-.bl {
-  display: block;
-}
 .tabela_1,
 .tabela2 {
   margin-top: 50px;
@@ -70,13 +59,13 @@
   width: 85%;
   border-radius: 5px;
 }
-.tabel_1 table,
-.tabel_2 table,
-.tabel_3 table,
-.tabel_4 table,
-.tabel_5 table,
-.tabel_6 table,
-.tabela-7 table {
+.tabela_1 table,
+.tabela_2 table,
+.tabela_3 table,
+.tabela_4 table,
+.tabela_5 table,
+.tabela_6 table,
+.tabela_7 table {
   margin-left: 30px;
 }
 .tabela2 table,
@@ -89,17 +78,6 @@
   margin-left: 30px;
 }
 
-.tabela3,
-.tabela4,
-.tabela5,
-.tabela6,
-.tabela7,
-.tabela8 {
-  display: none;
-}
-.blb {
-  display: block;
-}
 .editp {
   padding-bottom: 3000px;
 }
@@ -107,6 +85,49 @@
   order: -1;
 }
 
+.tabela_2 h1,
+.tabela_3 h1,
+.tabela_4 h1,
+.tabela_5 h1,
+.tabela_6 h1,
+.tabela_7 h1 {
+  font-family: poppins;
+  font-size: 15px;
+  color: white;
+  margin-top: 40px;
+  width: 95%;
+  margin-left: 50px;
+  font-weight: 600;
+}
+.tabela_1 h1,
+.tabela2 h1,
+.tabela3 h1,
+.tabela4 h1,
+.tabela5 h1,
+.tabela6 h1,
+.tabela7 h1,
+.tabela8 h1 {
+  font-family: poppins;
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+  margin-top: 40px;
+  width: 95%;
+  margin-left: 50px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+td {
+  padding: 20px;
+  font-family: poppins;
+  width: 45%;
+  font-size: 12px;
+  color: white;
+}
 #tabelaEditavel td,
 #tabelaEditavel2 td,
 #tabelaEditavel10 td,
@@ -124,4 +145,8 @@
 }
 .none {
   display: none;
+}
+.sec {
+  position: relative;
+  top: 120px;
 }
