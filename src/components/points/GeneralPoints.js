@@ -1,6 +1,5 @@
 import stylesMobile from './GeneralPoints.mobile.module.css'
 import stylesDesktop from './GeneralPoints.desktop.module.css'
-import React, { useEffect } from 'react';
 import Header from '../Header/Header'
 import HeaderBottom from '../Header/HeaderBottom'
 import { useState } from 'react';
@@ -8,7 +7,7 @@ import { useState } from 'react';
 function GeneralPoints() {
     const [etapa6, setEtapa6] = useState(false)
     const [etapa5, setEtapa5] = useState(false)
-    var [etapa4, setEtapa4] = useState(false)
+    const [etapa4, setEtapa4] = useState(false)
     const [etapa3, setEtapa3] = useState(false)
     const [etapa2, setEtapa2] = useState(false)
     const [etapa1, setEtapa1] = useState(false)

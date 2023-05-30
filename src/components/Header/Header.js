@@ -16,16 +16,25 @@ function Header() {
     function MenuOpen() {
         var nv = document.querySelector(`.${stylesMobile.nv}`);
         nv.classList.toggle(stylesMobile.open);
+        const overlay = document.querySelector(`.${stylesMobile.overlay}`);
+        overlay.style.display = 'block';
     }
     function close() {
         var nv = document.querySelector(`.${stylesMobile.nv}`);
         nv.classList.remove(stylesMobile.open)
-
+        const overlay = document.querySelector(`.${stylesMobile.overlay}`);
+        overlay.style.display = 'none';
     }
     function subchavv(event) {
         event.preventDefault()
         var subglob = document.querySelector(`.${stylesMobile.subglob}`)
         subglob.classList.toggle(stylesMobile.subglobopen)
+    }
+    function sumir() {
+        var menu = document.querySelector(`.${stylesMobile.nv}`)
+        const overlay = document.querySelector(`.${stylesMobile.overlay}`);
+        menu.classList.remove(stylesMobile.open)
+        overlay.style.display = 'none';
     }
     return (
         <div>
@@ -98,7 +107,7 @@ function Header() {
                 </ul>
 
             </nav>
-
+            <div className={`${stylesMobile.overlay}`} onClick={sumir}></div>
         </div >
     )
 }
