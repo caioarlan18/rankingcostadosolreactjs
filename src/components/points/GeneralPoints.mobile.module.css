@@ -1,2 +1,127 @@
-@media screen and (min-width: 992px) and (max-width: 4000px) {
+.drop1 {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+}
+
+.drop18 h1 {
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+  font-family: poppins;
+  cursor: pointer;
+}
+
+.drop18 {
+  margin-top: 20px;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #ff6a49;
+  width: 80%;
+  cursor: pointer;
+}
+.drop17 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.drop18 p {
+  margin-top: 3px;
+  font-size: 10px;
+  font-weight: 400;
+  font-family: poppins;
+  color: white;
+}
+.drop19 {
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+}
+.drop20 {
+  margin-top: 17px;
+  margin-left: 10px;
+  padding: 15px;
+  display: flex;
+}
+.drop20 h1 {
+  color: #8d8f8d;
+  font-family: poppins;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.tabel_2,
+.tabel_3,
+.tabel_4,
+.tabel_5,
+.tabel_6,
+.tabela-7 {
+  display: none;
+}
+.bl {
+  display: block;
+}
+.tabela_1,
+.tabela2 {
+  margin-top: 50px;
+  background-color: #f2f2f2;
+  padding: 15px;
+  width: 85%;
+  border-radius: 5px;
+}
+.tabel_1 table,
+.tabel_2 table,
+.tabel_3 table,
+.tabel_4 table,
+.tabel_5 table,
+.tabel_6 table,
+.tabela-7 table {
+  margin-left: 30px;
+}
+.tabela2 table,
+.tabela3 table,
+.tabela4 table,
+.tabela5 table,
+.tabela6 table,
+.tabela7 table,
+.tabela8 table {
+  margin-left: 30px;
+}
+
+.tabela3,
+.tabela4,
+.tabela5,
+.tabela6,
+.tabela7,
+.tabela8 {
+  display: none;
+}
+.blb {
+  display: block;
+}
+.editp {
+  padding-bottom: 3000px;
+}
+.ordem {
+  order: -1;
+}
+
+#tabelaEditavel td,
+#tabelaEditavel2 td,
+#tabelaEditavel10 td,
+#tabelaEditavel11 td,
+#tabelaEditavel12 td,
+#tabelaEditavel13 td,
+#tabelaEditavel20 td,
+#tabelaEditavel21 td,
+#tabelaEditavel22 td,
+#tabelaEditavel23 td {
+  border: 1px solid black;
+  color: black;
+  font-weight: 600;
+  text-align: center;
+}
+.none {
+  display: none;
 }

@@ -9,7 +9,7 @@ function MainContent() {
         <div>
             <main className={`${stylesMobile.mn} ${stylesDesktop.mn}`}>
                 <div className={`${stylesMobile.mn1} ${stylesDesktop.mn1}`}>
-                    <Link to='GeneralPoints'><img src={MainImage} alt="imagem principal do site" /></Link>
+                    <Link to='Pontuação Geral'><img src={MainImage} alt="imagem principal do site" /></Link>
                 </div>
                 <div className={`${stylesMobile.mn2} ${stylesDesktop.mn2}`}>
                     <img src={MainImage2} alt="imagem principal do site" />

@@ -39,7 +39,7 @@ function Header() {
                     <h1 className={`${stylesMobile.orient} ${stylesDesktop.orient}`}>Home</h1>
                 </div>
                 <div className={`${stylesMobile.hdd1} ${stylesDesktop.hdd1}`}>
-                    <img src={LogoSite} alt="logo principal do site" height="170px" onClick="logo()" />
+                    <img src={LogoSite} alt="logo principal do site" height="170px" />
                 </div>
             </header>
 
@@ -78,13 +78,13 @@ function Header() {
                     <Link> <li onClick={subchavv}>Chaveamento
 
                         <div className={`${stylesMobile.subglob} ${stylesDesktop.subglob}`}>
-                            <Link to='chaveA' onClick={close} className={`${stylesMobile.subchav1} ${stylesDesktop.subchav1}`}>Categoria A</Link>
-                            <Link to='chaveB' onClick={close} className={`${stylesMobile.subchav2} ${stylesDesktop.subchav2}`}>Categoria B</Link>
+                            <Link to='/chaveamentoA' onClick={close} className={`${stylesMobile.subchav1} ${stylesDesktop.subchav1}`}>Categoria A</Link>
+                            <Link to='/chaveamentoB' onClick={close} className={`${stylesMobile.subchav2} ${stylesDesktop.subchav2}`}>Categoria B</Link>
                         </div>
 
                     </li>
                     </Link>
-                    <Link to='org' onClick={close}> <li >Painel</li></Link>
+                    <Link to='/organização' onClick={close}> <li >Painel</li></Link>
 
                     <div className={stylesMobile.redes}>
                         <a href="https://www.instagram.com/tmprogressocabofrio/">

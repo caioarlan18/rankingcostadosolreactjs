@@ -23,9 +23,9 @@ function HeaderBottom() {
                 <span className={`${stylesMobile.dot1} ${stylesDesktop.dot1}`}></span>
             </div>
             <div class={`${stylesMobile.menudown1} ${stylesDesktop.menudown1}`}>
-                <Link to='GeneralPoints'>
+                <Link to='/pontuaçãogeral'>
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="51.908" viewBox="0 0 56.54 51.908"
-                        onclick="reg()" class={`${stylesMobile.i2} ${stylesDesktop.i2}`}>
+                        class={`${stylesMobile.i2} ${stylesDesktop.i2}`}>
                         <g id="Grupo_246" data-name="Grupo 246" transform="translate(-403.047 -6225.882)">
                             <g id="Grupo_245" data-name="Grupo 245">
                                 <path id="Retângulo_61" data-name="Retângulo 61"
@@ -50,9 +50,9 @@ function HeaderBottom() {
                 <span className={`${stylesMobile.dot2} ${stylesDesktop.dot2}`}></span>
             </div>
             <div className={`${stylesMobile.menudown1} ${stylesDesktop.menudown1}`}>
-                <Link to='org'>
+                <Link to='/organização'>
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="41.673" viewBox="0 0 35.422 41.673" className={`${stylesMobile.i3} ${stylesDesktop.i3}`}
-                        onclick="org()">
+                    >
                         <g id="Grupo_248" data-name="Grupo 248" transform="translate(-630.036 -6237.147)">
                             <path id="Shape-13"
                                 d="M647.747,6257.984a10.418,10.418,0,1,1,10.33-10.5v.087A10.387,10.387,0,0,1,647.747,6257.984Zm0-17.861a7.443,7.443,0,1,0,7.38,7.5v-.062A7.42,7.42,0,0,0,647.747,6240.123Z"
