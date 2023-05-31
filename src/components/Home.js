@@ -4,7 +4,7 @@ import HeaderBottom from "./Header/HeaderBottom"
 function Home() {
     return (
         <div>
-            <Header />
+            <Header orient={'Home'} />
             <MainContent />
             <HeaderBottom />
         </div>

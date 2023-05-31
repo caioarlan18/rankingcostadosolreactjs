@@ -16,7 +16,7 @@ function GeneralPoints() {
 
     return (
         <div>
-            <Header />
+            <Header orient={'Pontuações'} />
             <section className={`${stylesMobile.sec} ${stylesDesktop.sec}`}>
 
                 <div className={`${stylesMobile.drop1} ${stylesDesktop.drop1}`} id="drop">

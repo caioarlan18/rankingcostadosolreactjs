@@ -27,7 +27,7 @@ function LoginPage() {
     }
     return (
         <div>
-            <Header />
+            <Header orient={'Painel'} />
             <div className={`${stylesMobile.back} ${stylesDesktop.back}`}>
 
                 <header className={`${stylesMobile.hd} ${stylesDesktop.hd}`}>

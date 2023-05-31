@@ -18,3 +18,8 @@
 .menudown1 img {
   cursor: pointer;
 }
+
+.active5 {
+  stroke-width: 3;
+  stroke: #ff6a49;
+}

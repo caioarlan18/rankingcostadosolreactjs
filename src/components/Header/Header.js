@@ -8,11 +8,8 @@ import stylesMobile from './Header.mobile.module.css'
 import stylesDesktop from './Header.desktop.module.css'
 import Arrow from '../../images/arrow-desktop.svg'
 
-function Header() {
-    function reg() {
-        var orient = document.querySelector('h1.orient')
+function Header({ orient }) {
 
-    }
     function MenuOpen() {
         var nv = document.querySelector(`.${stylesMobile.nv}`);
         nv.classList.toggle(stylesMobile.open);
@@ -45,7 +42,7 @@ function Header() {
                     <FaBars onClick={MenuOpen} />
                 </div>
                 <div className={`${stylesMobile.hdd1} ${stylesDesktop.hdd1}`}>
-                    <h1 className={`${stylesMobile.orient} ${stylesDesktop.orient}`}>Home</h1>
+                    <h1 className={`${stylesMobile.orient} ${stylesDesktop.orient}`}>{orient}</h1>
                 </div>
                 <div className={`${stylesMobile.hdd1} ${stylesDesktop.hdd1}`}>
                     <img src={LogoSite} alt="logo principal do site" height="170px" />
@@ -60,20 +57,20 @@ function Header() {
                 </div>
                 <div className={`${stylesMobile.hd2} ${stylesDesktop.hd2}`}>
                     <li>
-                        <a href="#" onclick="home()">Home</a><img src={Arrow} alt="" width="15px"
-                            height="15px" class="arrow" onclick="arrow()" />
+                        <Link to='/' >Home</Link><img src={Arrow} alt="" width="15px"
+                            height="15px" className="arrow" />
                     </li>
                     <a href="https://www.instagram.com/tmprogressocabofrio/" className={`${stylesMobile.submenu3} ${stylesDesktop.submenu3}`}>Instagram</a>
                     <a href="https://www.facebook.com/tmprogresso.cabofrio.5" className={`${stylesMobile.submenu4} ${stylesDesktop.submenu4}`}>Facebook</a>
                 </div>
                 <div className={`${stylesMobile.hd2} ${stylesDesktop.hd2}`}>
-                    <li><a href="#" onClick={reg}>Regulamentos</a></li>
+                    <li><Link to='/' >Regulamentos</Link></li>
                 </div>
                 <div className={`${stylesMobile.hd2} ${stylesDesktop.hd2}`}>
-                    <li><a href="#" onclick="chav()">Chaveamento</a></li>
+                    <li><Link to='/chaveamentoa' >Chaveamento</Link></li>
                 </div>
                 <div className={`${stylesMobile.hd2} ${stylesDesktop.hd2}`}>
-                    <li><a href="#" onclick="org()">Entrar como organizador</a></li>
+                    <li><Link to='/painel' >Entrar como organizador</Link></li>
                 </div>
 
             </header>
@@ -93,7 +90,7 @@ function Header() {
 
                     </li>
                     </Link>
-                    <Link to='/organização' onClick={close}> <li >Painel</li></Link>
+                    <Link to='/painel' onClick={close}> <li >Painel</li></Link>
 
                     <div className={stylesMobile.redes}>
                         <a href="https://www.instagram.com/tmprogressocabofrio/">
