@@ -1,0 +1,49 @@
+.plogin {
+  position: absolute;
+  top: 120px;
+  width: 100%;
+  height: 100%;
+  background-color: #fafafa;
+}
+.plogin img {
+  position: relative;
+  top: 120px;
+  display: flex;
+}
+.plogin1 h1 {
+  color: #3e4441;
+  font-family: poppins;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 60px;
+  font-size: 20px;
+}
+.plogin1 {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+.plogin1 a {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+.plogin1 button {
+  height: 37px;
+  width: 75%;
+  margin-top: 20px;
+  cursor: pointer;
+  color: white;
+  font-family: poppins;
+  border: 0;
+  border-radius: 5px;
+}
+.ctp {
+  background-color: #ff6a49;
+}
+.epp {
+  background-color: #3e4441;
+}

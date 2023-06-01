@@ -7,8 +7,9 @@ function HeaderBottom() {
 
     return (
         <div className={`${stylesMobile.menudown} ${stylesDesktop.menudown}`}>
-            <div className={`${stylesMobile.menudown1} ${stylesDesktop.menudown1}`}>
-                <Link to='/'>
+            <Link to='/'>
+                <div className={`${stylesMobile.menudown1} ${stylesDesktop.menudown1}`}>
+
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="47.651" viewBox="0 0 49.238 47.651"
                         className={`${stylesMobile.i1} ${stylesDesktop.i1}`} >
                         <g id="Grupo_247" data-name="Grupo 247" transform="translate(-186.588 -6230.388)" >
@@ -22,11 +23,14 @@ function HeaderBottom() {
                                 fill="none" stroke="#aaaeac" stroke-width="2" style={{ stroke: location.pathname === '/' && '#ff6a49', strokeWidth: location.pathname === '/' && '3' }} />
                         </g>
                     </svg>
-                </Link>
-                <span className={`${stylesMobile.dot1} ${stylesDesktop.dot1}`}></span>
-            </div>
-            <div class={`${stylesMobile.menudown1} ${stylesDesktop.menudown1}`}>
-                <Link to='/score'>
+
+                    <span className={location.pathname === '/' && stylesMobile.dot1}></span>
+                </div>
+            </Link>
+
+            <Link to='/score'>
+                <div class={`${stylesMobile.menudown1} ${stylesDesktop.menudown1}`}>
+
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="51.908" viewBox="0 0 56.54 51.908"
                         class={`${stylesMobile.i2} ${stylesDesktop.i2}`} >
                         <g id="Grupo_246" data-name="Grupo 246" transform="translate(-403.047 -6225.882)">
@@ -49,25 +53,29 @@ function HeaderBottom() {
                                 fill="none" stroke="#aaaeac" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style={{ stroke: location.pathname === '/score' && '#ff6a49', strokeWidth: location.pathname === '/score' && '3' }} />
                         </g>
                     </svg>
-                </Link>
-                <span className={`${stylesMobile.dot2} ${stylesDesktop.dot2}`}></span>
-            </div>
-            <div className={`${stylesMobile.menudown1} ${stylesDesktop.menudown1}`}>
-                <Link to='/painel'>
+
+                    <span className={location.pathname === '/score' && stylesMobile.dot1}></span>
+                </div>
+            </Link>
+
+            <Link to='/painel'>
+                <div className={`${stylesMobile.menudown1} ${stylesDesktop.menudown1}`}>
+
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="41.673" viewBox="0 0 35.422 41.673" className={`${stylesMobile.i3} ${stylesDesktop.i3}`}
                     >
                         <g id="Grupo_248" data-name="Grupo 248" transform="translate(-630.036 -6237.147)">
                             <path id="Shape-13"
                                 d="M647.747,6257.984a10.418,10.418,0,1,1,10.33-10.5v.087A10.387,10.387,0,0,1,647.747,6257.984Zm0-17.861a7.443,7.443,0,1,0,7.38,7.5v-.062A7.42,7.42,0,0,0,647.747,6240.123Z"
-                                fill="#aaaeac" style={{ stroke: location.pathname === '/painel' && '#ff6a49', strokeWidth: location.pathname === '/painel' && '2' }} />
+                                fill="#aaaeac" style={{ stroke: (location.pathname === '/painel' || location.pathname === '/preadmin' || location.pathname === '/paineladmin' || location.pathname === '/paineladmin2') && '#ff6a49', strokeWidth: (location.pathname === '/painel' || location.pathname === '/preadmin' || location.pathname === '/paineladmin' || location.pathname === '/paineladmin2') && '2' }} />
                             <path id="Shape-14"
                                 d="M663.981,6278.821h-32.47a1.484,1.484,0,0,1-1.475-1.488,16.322,16.322,0,0,1,16.236-16.371h2.952a16.321,16.321,0,0,1,16.234,16.371A1.484,1.484,0,0,1,663.981,6278.821Zm-17.711-14.882a13.309,13.309,0,0,0-13.194,11.906h29.34a13.313,13.313,0,0,0-13.194-11.906Z"
-                                fill="#aaaeac" style={{ stroke: location.pathname === '/painel' && '#ff6a49', strokeWidth: location.pathname === '/painel' && '2' }} />
+                                fill="#aaaeac" style={{ stroke: (location.pathname === '/painel' || location.pathname === '/preadmin' || location.pathname === '/paineladmin' || location.pathname === '/paineladmin2') && '#ff6a49', strokeWidth: (location.pathname === '/painel' || location.pathname === '/preadmin' || location.pathname === '/paineladmin' || location.pathname === '/paineladmin2') && '2' }} />
                         </g>
                     </svg>
-                </Link>
-                <span className={`${stylesMobile.dot3} ${stylesDesktop.dot3}`}></span>
-            </div>
+
+                    <span className={(location.pathname === '/painel' || location.pathname === '/preadmin' || location.pathname === '/paineladmin' || location.pathname === '/paineladmin2') && stylesMobile.dot1}></span>
+                </div>
+            </Link>
         </div>
     )
 }

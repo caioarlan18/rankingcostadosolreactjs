@@ -23,7 +23,7 @@ function LoginPage() {
         }
     }
     if (isLogged) {
-        window.location.href = '/pontuaçãogeral';
+        window.location.href = '/preadmin';
     }
     return (
         <div>

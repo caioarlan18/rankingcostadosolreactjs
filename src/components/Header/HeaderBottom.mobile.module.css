@@ -23,3 +23,12 @@
   stroke-width: 3;
   stroke: #ff6a49;
 }
+
+.dot1 {
+  position: absolute;
+  bottom: -4px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #ff6a49;
+}
