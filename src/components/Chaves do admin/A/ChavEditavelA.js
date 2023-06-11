@@ -1,5 +1,5 @@
-import stylesMobile from './ChavNaoEditavelA.mobile.module.css'
-import stylesDesktop from './ChavNaoEditavelA.desktop.module.css'
+import stylesMobile from './ChavEditavelA.mobile.module.css'
+import stylesDesktop from './ChavEditavelA.desktop.module.css'
 import Header from '../../Header/Header'
 import HeaderBottom from '../../Header/HeaderBottom'
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
@@ -27,10 +27,14 @@ function ChavNaoEditavelA() {
             }
             isFirst = false
         }
+        const collectionRef = doc(db, 'teste', 'chave1');
+        const data = { chave1: chave1 };
+
         try {
-            const docRef = await setDoc(doc(db, 'teste', 'chave1'), { chave1 });
-        } catch (e) {
-            console.error("Error adding document: ", e);
+            await setDoc(collectionRef, data);
+            console.log('Documento salvo com sucesso!');
+        } catch (error) {
+            console.error('Erro ao adicionar o documento:', error);
         }
         alert('Salvo com sucesso')
 

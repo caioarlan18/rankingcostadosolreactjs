@@ -1,0 +1,15 @@
+.tabela_10 {
+  border-bottom: 1px solid black;
+  padding: 50px;
+  position: absolute;
+  top: 120px;
+}
+
+.tabela_10 h1 {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-family: poppins;
+  font-size: 25px;
+  color: #ff6a49;
+}

@@ -5,7 +5,7 @@ import HeaderBottom from '../../Header/HeaderBottom'
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
 import { getFirestore, setDoc, getDoc, doc } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-firestore.js";
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import ChavNaoEditavelA from '../../Chaves do admin/A/ChavNaoEditavelA';
+import ChavEditavelA from '../../Chaves do admin/A/ChavEditavelA';
 
 function OrgPage() {
 
@@ -14,7 +14,7 @@ function OrgPage() {
 
         <div>
             <Header />
-            <ChavNaoEditavelA />
+            <ChavEditavelA />
             <HeaderBottom />
         </div>
     )

@@ -1,6 +1,6 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import ChavA from './components/KeyPages/ChavA';
+import ChavNaoEditavelA from './components/KeyPages/ChavNaoEditavelA';
 import GeneralPoints from './components/points/GeneralPoints';
 import Home from './components/Home';
 import LoginPage from './components/login/LoginPage';
@@ -17,7 +17,7 @@ function App() {
         <Routes>
           <Route path="/" exact element={<Home />} />
           <Route path='/score' element={<GeneralPoints />} />
-          <Route path='/chaveamentoA' element={<ChavA />} />
+          <Route path='/chaveamentoA' element={<ChavNaoEditavelA />} />
           <Route path='/chaveamentoB' element={''} />
           <Route path='/painel' element={<LoginPage />} />
           <Route path='paineladmin' element={<OrgPage />} />
